@@ -1,6 +1,9 @@
 import load_dataset
 from keras.api.models import Sequential
 from keras.api.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from keras.api.optimizers import RMSprop
+from keras.api.losses import categorical_crossentropy
+from keras.api.metrics import Accuracy
 
 
 def _build_model():
@@ -14,9 +17,9 @@ def _build_model():
         Dense(10, activation='softmax')
     ])
 
-    model.compile(optimizer='rmsprop',
-                  loss='categorical_crossentropy',
-                  metrics=['accuracy'])
+    model.compile(optimizer=RMSprop(),
+                  loss=categorical_crossentropy,
+                  metrics=[Accuracy()])
 
     return model
 
