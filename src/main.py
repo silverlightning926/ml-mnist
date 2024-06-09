@@ -9,7 +9,7 @@ def main():
     model = build_model.get_model()
 
     model = train_model.fit_model(
-        model, x_train, y_train, epochs=100, batch_size=32, validation_split=0.1)
+        model, x_train, y_train, epochs=100, batch_size=8, validation_split=0.1)
 
     loss, accuracy = train_model.evaluate_model(
         model, x_test, y_test)
