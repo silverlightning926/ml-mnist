@@ -18,7 +18,9 @@
 This repo contains my code for training an ML model using Google's TensorFlow library to recognize handwritten numbers. It has been trained and tested on the famous MNIST *(Modified National Institute Of Standards And Technology)* Dataset.
 
 ## Current Status
-⚠️ ***This Codebase Is Currently A Work In Progress*** ⚠️
+This project is complete. ✅
+
+To find the trainied model file, you will be able to find it in the [release section](https://github.com/silverlightning926/tensorflow-mnist/releases) of this repository or here [model.keras](./model.keras).
 
 ## Getting Started
 
@@ -88,7 +90,18 @@ The machine learning model for recognizing handwritten numbers in this repositor
 You can download the MNIST dataset directly from the [MNIST website](http://yann.lecun.com/exdb/mnist/) or through the provided script in this repository.
 
 ## Model Architecture
-*Coming Soon*
+The machine learning model for recognizing handwritten numbers in this repository is built using a convolutional neural network (CNN) architecture. The CNN consists of multiple layers, including convolutional layers, pooling layers, and fully connected layers.
+
+The input to the model is a 28x28 grayscale image of a handwritten digit. This is encoded in a [28, 28, 1] wector filled with lumnosity values from 0-1. The first layer of the CNN is a convolutional layer that applies a set of learnable filters to the input image, extracting features such as edges and textures. This is followed by a pooling layer that reduces the spatial dimensions of the feature maps, helping to capture important information while reducing computational complexity.
+
+The process of convolution and pooling is repeated multiple times, allowing the model to learn increasingly complex and abstract features from the input image. The final feature maps are then flattened and passed through one or more fully connected layers, which perform classification based on the learned features.
+
+To improve the model's performance and prevent overfitting, various techniques such as dropout and batch normalization are applied. Dropout randomly sets a fraction of the input units to 0 during training, reducing the model's reliance on specific features and improving generalization. Batch normalization normalizes the activations of the previous layer, making the model more robust to changes in input distribution.
+
+The output layer of the model consists of 10 units, corresponding to the 10 possible classes (digits 0-9). The model uses a softmax activation function to produce a probability distribution over the classes, indicating the model's confidence in its predictions.
+
+Overall, the model architecture is designed to effectively learn and classify handwritten digits, achieving high accuracy on the MNIST dataset.
+
 
 ## Liscense
 This repository is governed under the MIT license. The repository's license can be found here: [LICENSE](./LICENSE).
