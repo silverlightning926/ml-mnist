@@ -1,6 +1,7 @@
 def fit_model(model, x_train, y_train, epochs=20, batch_size=128, verbose=1):
+def fit_model(model: Sequential, x_train, y_train, epochs=20, batch_size=128, validation_split=0.1, verbose=1):
     model.fit(x_train, y_train, epochs=epochs,
-              batch_size=batch_size, verbose=verbose)
+              batch_size=batch_size, validation_split=validation_split, verbose=verbose)
 
     return model
 
