@@ -1,4 +1,4 @@
-name: Python Lint - autopep8
+name: Python Build
 
 on: [push, pull_request, workflow_dispatch]
 
