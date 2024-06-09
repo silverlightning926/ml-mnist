@@ -14,15 +14,11 @@ def _build_model():
         Dense(10, activation='softmax')
     ])
 
-    _compile_model(model)
-
-    return model
-
-
-def _compile_model(model):
     model.compile(optimizer='rmsprop',
                   loss='categorical_crossentropy',
                   metrics=['accuracy'])
+
+    return model
 
 
 def get_model():
