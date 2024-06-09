@@ -12,6 +12,7 @@
   - [Linting with Autopep8](#linting-with-autopep8)
   - [Dataset](#dataset)
   - [Model Architecture](#model-architecture)
+  - [Results](#results)
   - [Liscense](#liscense)
 
 ## Summary
@@ -102,6 +103,10 @@ The output layer of the model consists of 10 units, corresponding to the 10 poss
 
 Overall, the model architecture is designed to effectively learn and classify handwritten digits, achieving high accuracy on the MNIST dataset.
 
+## Results
+I was able to get the model to have an accuracy of 97.69% on the MNIST dataset's test data. This was after training the model on the training data for 100 epochs, with a batch size of 8. 
+
+At this point, more training came with increasingly more diminishing returns, with accuracy increasing very slowly.
 
 ## Liscense
 This repository is governed under the MIT license. The repository's license can be found here: [LICENSE](./LICENSE).
