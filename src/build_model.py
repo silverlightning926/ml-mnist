@@ -21,7 +21,7 @@ def _build_model():
             MaxPooling2D((2, 2)),
             Conv2D(64, (3, 3), activation='relu'),
             Flatten(),
-            Dense(64, activation='relu'),
+            Dense(128, activation='relu'),
             Dense(10, activation='softmax')
         ])
 
