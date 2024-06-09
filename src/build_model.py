@@ -4,8 +4,14 @@ from keras.api.optimizers import RMSprop
 from keras.api.losses import categorical_crossentropy
 from keras.api.metrics import Accuracy
 
+import os
+
 
 def _build_model():
+
+    if os.path.exists('./model.keras'):
+        return Sequential().load('model.keras')
+
     model = Sequential([
         Input(shape=(28, 28, 1)),
         Conv2D(32, (3, 3), activation='relu'),
