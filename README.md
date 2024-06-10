@@ -1,19 +1,34 @@
 # Machine Learning Model For Recognizing Handwritten Numbers
 *<div style="color:gray;margin-top:-10px;">By Siddharth Rao</div>*
 
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=flat&logo=Keras&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![MNIST](https://img.shields.io/badge/Dataset-MNIST_Handwritten_Digits-blue)
+
+---
+
 ![Python Lint - autopep8 Workflow](https://github.com/silverlightning926/tensorflow-mnist/actions/workflows/python-lint.yaml/badge.svg)
 
-## Table Of Contents
+---
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
 - [Machine Learning Model For Recognizing Handwritten Numbers](#machine-learning-model-for-recognizing-handwritten-numbers)
   - [Summary](#summary)
   - [Current Status](#current-status)
   - [Getting Started](#getting-started)
   - [Dependencies](#dependencies)
   - [Linting with Autopep8](#linting-with-autopep8)
+  - [Technologies](#technologies)
   - [Dataset](#dataset)
   - [Model Architecture](#model-architecture)
   - [Results](#results)
   - [Liscense](#liscense)
+
+<!-- /code_chunk_output -->
+
+---
 
 ## Summary
 This repo contains my code for training an ML model using Google's TensorFlow library to recognize handwritten numbers. It has been trained and tested on the famous MNIST *(Modified National Institute Of Standards And Technology)* Dataset.
@@ -85,10 +100,19 @@ If you are using VSCode, you can download and the [Autopep8 VSCode Extension](ht
     }
 ```
 
+## Technologies
+The technologies used in this project include but are not limited to:
+- Python: The main programming language used for developing the machine learning model and associated scripts.
+- TensorFlow: A popular open-source machine learning framework developed by Google, for nueral network and machine learning development.
+- Keras: A high-level neural networks API written in Python, used as a user-friendly interface to TensorFlow for building and configuring the model architecture.
+- Git: A distributed version control system used for tracking changes and collaborating on the codebase.
+- GitHub Actions: A CI/CD platform provided by GitHub, used for automating the linting workflow and displaying the linting badge in the README.
+- Autopep8: A Python library used for automatically formatting the code according to the PEP 8 style guide.
+
 ## Dataset
 The machine learning model for recognizing handwritten numbers in this repository is trained and tested on the MNIST dataset. MNIST, short for *Modified National Institute of Standards and Technology*, is a widely used dataset in the machine learning community for handwritten digit classification tasks. It consists of a training set of 60,000 examples and a test set of 10,000 examples, where each example is a 28x28 grayscale image of a handwritten digit (0 through 9). The dataset is preprocessed and formatted to facilitate training and evaluation of machine learning models.
 
-You can download the MNIST dataset directly from the [MNIST website](http://yann.lecun.com/exdb/mnist/) or through the provided script in this repository.
+You can download the MNIST dataset directly from the [MNIST website](http://yann.lecun.com/exdb/mnist/) or, as this project did, through the version baked into TensorFlow.
 
 ## Model Architecture
 The machine learning model for recognizing handwritten numbers in this repository is built using a convolutional neural network (CNN) architecture. The CNN consists of multiple layers, including convolutional layers, pooling layers, and fully connected layers.
