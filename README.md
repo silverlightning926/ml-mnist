@@ -1,6 +1,8 @@
 # Machine Learning Model For Recognizing Handwritten Numbers
 *<div style="color:gray;margin-top:-10px;">By Siddharth Rao</div>*
 
+---
+
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=flat&logo=Keras&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![MNIST](https://img.shields.io/badge/Dataset-MNIST_Handwritten_Digits-blue)
 
 ---
