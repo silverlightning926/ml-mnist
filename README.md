@@ -54,19 +54,9 @@ To get started with this machine learning model for recognizing handwritten numb
     pip install -r requirements.txt
     ```
 
-3. Download the MNIST dataset by executing the following script:
+3. Load the dataset, build the model, and train the model by running this command
     ```bash
-    python download_dataset.py
-    ```
-
-4. Train the model by running the training script:
-    ```bash
-    python train_model.py
-    ```
-
-5. Once the model is trained, you can test it by running the testing script:
-    ```bash
-    python test_model.py
+    python ./src/main.py
     ```
 
 6. Congratulations! You have successfully set up and trained the machine learning model for recognizing handwritten numbers using TensorFlow.
@@ -91,7 +81,7 @@ autopep8 --in-place --recursive ./src
 
 This will recursively format all Python files in the current directory and its subdirectories.
 
-Remember to run Autopep8 regularly to maintain a clean and consistent codebase.
+Remember to run Autopep8 regularly to maintain a clean and consistent codebase. This repo contains the Python Lint GitHub Workflow to ensure the repository stays linted.
 
 If you are using VSCode, you can download and the [Autopep8 VSCode Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.autopep8) and add these lines to your `settings.json` to format with Autopep8 automatically as you type and when you save.
 ```json
